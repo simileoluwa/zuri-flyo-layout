@@ -11,7 +11,8 @@
 
 body {
   /* font-family: 'Poppins', sans-serif; */
-  font-family: system-ui, sans-serif;
+  /* font-family: system-ui, sans-serif; */
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: 1.5;
   font-size: 1em;
@@ -50,16 +51,16 @@ img {
 }
 
 .main-header {
-  /* padding-top: 2rem; */
   min-block-size: 25ch;
   inline-size: 100%;
   max-inline-size: 1440px;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   margin-inline: auto;
+  font-family: "Raleway", sans-serif;
 }
 
 .logo {
-  width: 100%;
+  /* width: 100%; */
 }
 
 ul.top-nav {
@@ -86,6 +87,7 @@ ul.top-nav a {
   margin-bottom: 1rem;
   text-wrap: balance;
   color: var(--Very-Dark-Blue);
+  font-family: "Raleway", sans-serif;
 }
 
 .left {
@@ -112,6 +114,7 @@ ul.top-nav a {
   width: 30%;
   font-weight: bold;
   cursor: pointer;
+  font-family: "Raleway", sans-serif;
 }
 
 .hero button:hover {
@@ -136,7 +139,7 @@ section.content .link {
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  margin-bottom: 2rem;
+  margin-block: 2rem;
   text-wrap: balance;
   line-height: 1.6rem;
   color: var(--Very-Dark-Blue);
@@ -182,6 +185,7 @@ section.content .testimonial img {
 .founder .founder-title {
   font-weight: bold;
   font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .founder span {
@@ -199,6 +203,7 @@ section.search .section-title {
   margin-bottom: 1rem;
   text-wrap: balance;
   color: #fefffc;
+  font-family: "Raleway", sans-serif;
 }
 
 section.search input {
@@ -221,6 +226,7 @@ section.search button {
   cursor: pointer;
   box-shadow: rgba(52, 52, 52, 0.2) 0px 4px 8px 1px;
   margin-top: 1rem;
+  font-family: "Raleway", sans-serif;
 }
 
 section.search button:hover {
@@ -271,7 +277,6 @@ section.footer ul li {
 section.footer .social-media {
   display: flex;
   gap: 1rem;
-  /* margin-top: 1rem; */
 }
 
 section.footer .social-media-icon:hover {
@@ -301,7 +306,130 @@ section.footer .social-media-icon:hover {
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
-  article {
+  .wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin-inline: auto;
+    inline-size: 100%;
+    /* overflow-x: hidden; */
+    text-align: center;
+  }
+
+  #flex-boy-mobile {
+    flex-direction: row;
+  }
+
+  ul.top-nav {
+    gap: 1rem;
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+
+  .flex-boy,
+  .flex-boy-footer {
     flex-direction: column;
+    align-items: center;
+    /* gap: 2rem; */
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  /* .main-header {
+    background-color: bisque;
+  } */
+
+  .section-title {
+    font-size: 1.5rem;
+    text-wrap: stable;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .left {
+    /* text-wrap: stable; */
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .left2 {
+    text-align: left;
+  }
+  .flexflow1 {
+    order: 1;
+  }
+  .flexflow2 {
+    order: 2;
+  }
+
+  .hero input,
+  .hero button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hero button {
+    margin-top: 1rem;
+    font-family: "Raleway", sans-serif;
+  }
+
+  section.content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  section.content .link {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  section.content .testimonial {
+    width: 100%;
+    text-align: left;
+    /* text-justify: inter-word; */
+  }
+  .founder .founder-title {
+    font-weight: bold;
+    font-size: 0.8rem;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .founder span {
+    font-size: 0.7rem;
+  }
+
+  section.search .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-wrap: balance;
+    color: #fefffc;
+    font-family: "Raleway", sans-serif;
+  }
+
+  section.search input,
+  section.search button {
+    width: 100%;
+  }
+
+  ul.footer-nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  section.footer ul {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+
+  section.footer .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* margin-top: 1rem; */
   }
 }
