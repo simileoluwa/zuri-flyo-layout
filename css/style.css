@@ -157,6 +157,7 @@ section.content .link img {
   align-items: center;
   color: var(--Accent-Moderate-Cyan);
   gap: 0.3rem;
+  min-width: fit-content;
 }
 
 section.content .testimonial {
